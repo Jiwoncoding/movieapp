@@ -1,0 +1,19 @@
+1. package.json에서
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",  // 쉼표도 지우고
+    // 아래의 test, eject 명령어 지우기
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+
+2. 리액트 앱의 종료 단축키 : Ctrl + C
+
+3. 문자열을 제외한 값은 반드시 중괄호에 감싸야 한다.
+
+4. map()함수 : 배열의 모든 원소마다 특정 작업을 하는 함수를 적용하고, 그 함수가 반환한 결과를 모아서 배열로 반환해 준다.
+
+5. prop-types : props의 자료형을 검사할 수 있도록 도와주는 도구
+   $ npm install prop-types
+   → package.json - dependencies키에 prop-types가 있는지 확인
+   → App.js에 import PropTypes from 'prop-types'; 입력
