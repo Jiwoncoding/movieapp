@@ -17,3 +17,11 @@
    $ npm install prop-types
    → package.json - dependencies키에 prop-types가 있는지 확인
    → App.js에 import PropTypes from 'prop-types'; 입력
+
+6. state : 동적 데이터를 다룸, props는 동적 데이터를 다루지 못하기 때문에 state가 필요
+   state를 사용하려면 클래스형 컴포넌트를 알아야 한다.
+
+7. setState() 함수는 바뀐 state의 데이터만 업데이트한다. 그래서 변경 대상이 아닌 키와 키값은 그대로 유지된다.
+   velog 글에서 사용 예시 확인
+
+8. 
