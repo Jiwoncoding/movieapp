@@ -14,6 +14,7 @@ class App extends React.Component {
         count : 0,
     };
 
+    // 숫자 증감 기능 만들기
     add = () => this.setState(current => ({count:current.count + 1}));
 
     minus = () => this.setState(current => ({count:current.count - 1}));
