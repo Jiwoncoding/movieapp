@@ -32,4 +32,22 @@
 
 11. componentWillUnmount()함수 : 이 함수는 컴포넌트가 화면에서 떠날 때 실행된다. 보통 컴포넌트에 적용한 이벤트 리스너를 제거할 때 많이 사용한다.
 
-12. 
+12. 영화 데이터를 로딩하려면 자바스크립트의 fetch()라는 함수가 필요한데, 이 함수 대신 axios라는 도구를 사용해서 영화 앱을 만들 것임 npm install axios 설치
+
+13. YTS 영화 데이터 API 살펴보기 : 주소창에 https://yts.mx/api → <List Movies>
+
+14. 영화 목록 데이터 확인해보기 : 주소창에 https://yts.mx/api/v2/list_movies.json 검색
+
+15. json 데이터를 좀 더 편하게 보려면 크롬 브라우저의 'JSON Viewer'라는 확장 도구 설치.
+
+16. 노마드코더 영화 API 주소 : https://yts-proxy.now.sh/list_movies.json   안전하게 노마드코더의 API 주소를 사용 할 것 
+
+17. 영화 정보를 더 자세히 보기 위해 조건 추가하기 : yts.mx/api#movie_details → movie_id 가 필수 → (예시) https://yts-proxy.now.sh/movie_details.json?movie_id=10
+
+18. 영화 앱에서 API를 사용하는 방법 : App.js 파일 맨 위에 axios를 import한 다음, componentDidMount() 함수에서 axios로 API를 호출
+
+19. componentDidMount()함수가 실행되면 this.getMovies()가 실행될 것. 이떄 자바스크립트에게 'getMovies()함수는 시간이 좀 필요해'라고 말해야만 axios.get()이 반환한 데이터를 제대로 잡을 수 있다. 그렇게 하려면 두 가지 키워드가 필요한데 → async, await
+
+20. API에서 데이터를 받아오는 axios.get()을 실행하려면 시간이 필요하고, 그 사실을 자바스크립트에게 알려야만 데이터를 잡을 수 있으므로 async, await를 사용했다는 것을 기억할 것!!!
+
+21. 
